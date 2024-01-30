@@ -1,0 +1,23 @@
+.board {
+  width: 100rem;
+  height: 100%;
+  max-width: 100%;
+  background-color: indianred;
+  grid-row: 2/5;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+
+.card {
+  aspect-ratio: 4/5;
+  height: 80%;
+  border-radius: 1rem;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 500;
+}

@@ -1,0 +1,10 @@
+header {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ft-tight);
+}

@@ -1,0 +1,9 @@
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: var(--fs-footer);
+  letter-spacing: var(--ft-wide);
+}
