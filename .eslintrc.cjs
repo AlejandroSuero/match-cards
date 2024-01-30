@@ -28,6 +28,8 @@ module.exports = {
     "react"
   ],
   rules: {
+    semi: "off",
+    "@typescript-eslint/semi": ["error", "always"],
     "@typescript-eslint/quotes": [
       "error",
       "double"
@@ -41,4 +43,4 @@ module.exports = {
     "react/jsx-indent": "off",
     "react/react-in-jsx-scope": "off"
   }
-}
+};
