@@ -27,6 +27,6 @@
       "@components/*": ["./src/components/*"]
     }
   },
-  "include": ["src", "./.eslintrc.cjs", "./vite.config.ts"],
+  "include": ["./src", "./.eslintrc.cjs", "./vite.config.ts", "./.prettierrc.cjs", "./src/setupTests.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

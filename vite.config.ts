@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/triple-slash-reference */
+/// <reference types="vitest" />
+/// <reference types="vite/client" />
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "node:path";
@@ -13,6 +17,7 @@ export default (args: ViteConfigInput) => {
     args.mode === "production"
       ? "[hash:base64:10]"
       : "[name]__[local]___[hash:base64:2]";
+  const setupFiles = ["./src/tests/setupTests.ts"];
   return defineConfig({
     resolve: {
       alias: {
@@ -28,6 +33,11 @@ export default (args: ViteConfigInput) => {
         localsConvention: "camelCase",
         generateScopedName,
       },
+    },
+    test: {
+      globals: true,
+      environment: "jsdom",
+      setupFiles,
     },
   });
 };
